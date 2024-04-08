@@ -1,0 +1,12 @@
+@font-face {
+    font-family: BunyaThin;
+    src: url('./Bunya-Thin_PERSONAL.ttf') format('truetype');
+    font-family: BunyaRegular;
+    src: url('./Bunya-Regular_PERSONAL.ttf') format('truetype');
+    font-family: BunyaLight;
+    src: url('./Bunya-Light_PERSONAL.ttf') format('truetype');
+    font-family: BunyaBold;
+    src: url('./Bunya-Bold_PERSONAL.ttf') format('truetype');
+    font-family: BunyaBlack;
+    src: url('./Bunya-Black_PERSONAL.ttf') format('truetype');
+}
