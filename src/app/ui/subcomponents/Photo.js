@@ -27,16 +27,16 @@ export const Photo = () =>{
                      onClick={()=>{
                         window.open(item.user.portfolio_url, '_blank')
                      }}
-                     style={{backgroundColor:"rgb(17, 17, 17)", padding:'25px', borderTopLeftRadius:"15px", borderTopRightRadius:"15px", color:'white', fontSize:'20px', display:'flex', alignItems:"center"}}>
-                        <img style={{width:"30px", height:'30px', borderRadius:'50%'}} src={item.user.profile_image.small}></img>
+                     style={{backgroundColor:"rgb(17, 17, 17)", padding:'25px', paddingBottom:'10px', borderTopLeftRadius:"15px", borderTopRightRadius:"15px", color:'white', fontSize:'17px', display:'flex', alignItems:"center"}}>
+                        <img style={{width:"30px", height:'30px', borderRadius:'50%'}} src={item.user.profile_image.medium}></img>
                         <p style={{marginLeft:'10px'}}>{item.user.name}</p>
                     </div>
                     <img style={{width:"100vw"}} src={item.urls.full}></img>
-                    <div style={{backgroundColor:"rgb(17, 17, 17)", padding:'25px', borderBottomLeftRadius:"15px", borderBottomRightRadius:"15px", color:'white', fontSize:'25px'}}>
+                    <div style={{backgroundColor:"rgb(17, 17, 17)", padding:'25px', paddingTop:'10px', borderBottomLeftRadius:"15px", borderBottomRightRadius:"15px", color:'white', fontSize:'17px'}}>
                         <div style={{display:"flex", justifyContent:"space-between", alignItems:"center"}}>
                             <div style={{display:"flex",justifyContent:'center', alignItems:"center"}}>
-                                <img style={{width:"30px"}} src="https://www.freeiconspng.com/thumbs/heart-icon/heart-icon-14.png"></img>
-                                <p className="likes-count">{item.likes}</p>
+                                <img style={{width:"20px"}} src="https://www.freeiconspng.com/thumbs/heart-icon/heart-icon-14.png"></img>
+                                <p className="likes-count" style={{marginLeft:'10px'}}>{item.likes}</p>
                             </div>
                             <div onClick={()=>{window.open(item.links.download)}}>
                                 <img style={{width:"40px"}} src="https://www.freeiconspng.com/uploads/white-download-icon-png-32.png"></img>
