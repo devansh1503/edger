@@ -1,18 +1,24 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import { Content } from "./ui/Content";
 import { Footer } from "./ui/Footer";
 import { Header } from "./ui/Header";
-import { Login } from "./ui/Login";
+import { CustomWarning } from "./ui/CustomWarning";
 
 export default function Home() {
   const [type, setType] = useState("photography")
+  const [display, setDisplay] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setDisplay(false)
+    },10000)
+  },[])
   return (
     <div>
+      {display && <CustomWarning setDisplay={setDisplay}/>}
       <Header/>
       <Content type={type}/>
-      {/* <Login/> */}
       <Footer setType={setType}/>
     </div>
   );

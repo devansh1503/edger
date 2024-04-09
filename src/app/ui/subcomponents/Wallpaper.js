@@ -18,6 +18,7 @@ export const Wallpaper = () => {
          })
     }
     return <div style={{marginTop:'40px', marginBottom:'30px'}}>
+        {loading && <div className="loader"></div>}
         {
             !loading && data.map((item, index)=>{
                 return <div key={index}>

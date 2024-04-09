@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
+
 export const Quotes = () =>{
     const [loading, setLoading] = useState(true)
     const [data, setData] = useState([])
@@ -18,6 +19,7 @@ export const Quotes = () =>{
          })
     }
     return <div className="quotes" style={{marginTop:'40px', marginBottom:'30px', color:'orange'}}>
+        {loading && <div className="loader"></div>}
         {
             !loading && data.map((item, index)=>{
                 return <div style={{width:'100%', height:'fit-content', padding:'40px', backgroundColor:'black', marginBottom:'20px'}} key={index}>
